@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains static_passthrough.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function static_passthrough_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the makina_statics_passthrough module.
+    case 'help.page.static_passthrough':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Passthrough static html files to Drupal 8') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function static_passthrough_theme() {
+  return [
+    'statics_passthrough' => [
+      'render element' => 'children',
+    ],
+  ];
+}

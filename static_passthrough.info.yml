@@ -1,0 +1,5 @@
+name: 'Makina - Static passthrough'
+type: module
+description: 'Passthrough static files to Drupal 8'
+core: 8.x
+package: 'Makina'

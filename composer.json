@@ -1,0 +1,24 @@
+{
+    "name": "makinacorpus/drupal-static-passthrough",
+    "type": "drupal-module",
+    "description": "Passthrough static html files to Drupal 8",
+    "keywords": [
+    ],
+    "homepage": "https://github.com/makinacorpus/drupal-static-passthrough",
+    "license" : "GPL-2",
+    "authors" : [
+        {
+            "name" : "Simon Mellerin",
+            "email" : "simon.mellerin@makina-corpus.com"
+        },
+        {
+            "name" : "Makina Corpus",
+            "homepage" : "http://makina-corpus.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://github.com/makinacorpus/drupal-static-passthrough/issues",
+        "source": "https://github.com/makinacorpus/drupal-static-passthrough"
+    }
+}
