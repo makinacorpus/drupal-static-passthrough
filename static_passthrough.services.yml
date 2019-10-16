@@ -2,4 +2,4 @@ services:
   static_passthrough.path_processor:
     class: Drupal\static_passthrough\PathProcessor\StaticPassthroughPathProcessor
     tags:
-      - { name: path_processor_inbound, priority: 25000 }
+      - { name: path_processor_inbound, priority: 250 }
