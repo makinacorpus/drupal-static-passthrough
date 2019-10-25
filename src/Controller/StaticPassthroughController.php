@@ -62,12 +62,14 @@ class StaticPassthroughController extends ControllerBase {
       \str_replace(':', '/', $relative_path)
     );
 
-    $last_slug = \array_pop(\explode('/', $path));
+    $explode_path = \explode('/', $path);
+    $last_slug = \array_pop($explode_path);
     if (\count(\explode('.', $last_slug)) <= 1 ) {
       return $this->redirectToHtml($request, $path);
     }
 
-    $extension = \end(\explode('.', $last_slug));
+    $exploded_slug = \explode('.', $last_slug);
+    $extension = \end($exploded_slug);
     if (!\in_array($extension, $directory_config['allowed_extension']) || !\file_exists($path)) {
       throw new NotFoundHttpException(\sprintf("Le fichier '%s' n'a pas pu être trouvé", $path));
     }
