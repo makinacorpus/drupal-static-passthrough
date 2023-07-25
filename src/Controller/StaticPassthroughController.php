@@ -74,7 +74,7 @@ class StaticPassthroughController extends ControllerBase {
       throw new NotFoundHttpException(\sprintf("Le fichier '%s' n'a pas pu être trouvé", $path));
     }
 
-    // If the config is standalone, we return a streamResponse and the thml is returned alone.
+    // If the config is standalone, we return a streamResponse : html is returned alone.
     if ($directory_config['standalone']) {
       $resource = @\fopen($path, 'r');
       return new StreamedResponse(function () use ($resource) {
