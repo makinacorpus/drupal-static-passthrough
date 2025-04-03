@@ -1,5 +1,5 @@
 name: 'Makina - Static passthrough'
 type: module
 description: 'Passthrough static files to Drupal 9+'
-core_version_requirement: ^9 || ^10
+core_version_requirement: ^9 || ^10 || ^11
 package: 'Makina'
